@@ -1,0 +1,132 @@
+/* homepage.css */
+
+/* Base styles for the entire page */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif; /* Ensure Inter font is used */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Container for the home page - equivalent to min-h-screen flex items-center justify-center bg-gray-900 text-white p-4 */
+.homepage-container {
+  min-height: 100vh; /* Full viewport height */
+  display: flex; /* Enable flexbox */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  background-color: #1a202c; /* Dark background (gray-900) */
+  color: #fff; /* White text */
+  padding: 1rem; /* Padding all around */
+}
+
+/* Content card styling - equivalent to max-w-4xl w-full bg-gray-800 rounded-xl shadow-2xl p-8 md:p-12 text-center border-2 border-orange-500 */
+.content-card {
+  max-width: 48rem; /* Max width for content */
+  width: 100%; /* Full width up to max-width */
+  background-color: #2d3748; /* Slightly lighter dark background (gray-800) */
+  border-radius: 0.75rem; /* Rounded corners */
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* Large shadow */
+  padding: 2rem; /* Default padding */
+  text-align: center; /* Center text */
+  border: 2px solid #f97316; /* Orange border */
+}
+
+/* Responsive padding for larger screens - equivalent to md:p-12 */
+@media (min-width: 768px) {
+  .content-card {
+    padding: 3rem;
+  }
+}
+
+/* Title styling - equivalent to text-4xl md:text-6xl font-extrabold text-orange-500 mb-4 tracking-tight */
+.title {
+  font-size: 2.25rem; /* Default font size */
+  font-weight: 800; /* Extra bold font */
+  color: #f97316; /* Orange text */
+  margin-bottom: 1rem; /* Margin below title */
+  letter-spacing: -0.05em; /* Tight letter spacing */
+}
+
+/* Responsive font size for title on larger screens */
+@media (min-width: 768px) {
+  .title {
+    font-size: 3.75rem;
+  }
+}
+
+/* Tagline styling - equivalent to text-xl md:text-2xl text-gray-300 font-semibold mb-6 */
+.tagline {
+  font-size: 1.25rem; /* Default font size */
+  color: #d1d5db; /* Light gray text */
+  font-weight: 600; /* Semi-bold font */
+  margin-bottom: 1.5rem; /* Margin below tagline */
+}
+
+/* Responsive font size for tagline on larger screens */
+@media (min-width: 768px) {
+  .tagline {
+    font-size: 1.5rem;
+  }
+}
+
+/* Description text styling - equivalent to text-base md:text-lg text-gray-400 leading-relaxed mb-8 */
+.description {
+  font-size: 1rem; /* Default font size */
+  color: #9ca3af; /* Medium gray text */
+  line-height: 1.625; /* Relaxed line height */
+  margin-bottom: 2rem; /* Margin below description */
+}
+
+/* Responsive font size for description on larger screens */
+@media (min-width: 768px) {
+  .description {
+    font-size: 1.125rem;
+  }
+}
+
+/* Get Started button styling - equivalent to bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-8 rounded-full text-lg md:text-xl shadow-lg transform transition duration-300 ease-in-out hover:scale-105 focus:outline-none focus:ring-4 focus:ring-orange-500 focus:ring-opacity-75 */
+.get-started-button {
+  background-color: #ea580c; /* Orange background */
+  color: #fff; /* White text */
+  font-weight: 700; /* Bold font */
+  padding: 0.75rem 2rem; /* Vertical and horizontal padding */
+  border-radius: 9999px; /* Fully rounded corners */
+  font-size: 1.125rem; /* Default font size */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Large shadow */
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Smooth transitions */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Button hover state */
+.get-started-button:hover {
+  background-color: #c2410c; /* Darker orange on hover */
+  transform: scale(1.05); /* Slightly larger on hover */
+}
+
+/* Button focus state */
+.get-started-button:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 0 4px rgba(249, 115, 22, 0.75); /* Orange ring on focus */
+}
+
+/* Responsive font size for button on larger screens */
+@media (min-width: 768px) {
+  .get-started-button {
+    font-size: 1.25rem;
+  }
+}
+
+/* User ID text styling - equivalent to mt-6 text-sm text-gray-500 */
+.user-id-text {
+  margin-top: 1.5rem; /* Margin above text */
+  font-size: 0.875rem; /* Small font size */
+  color: #6b7280; /* Gray text */
+}
+
+/* User ID value styling - equivalent to font-mono text-gray-400 break-all */
+.user-id-value {
+  font-family: 'monospace'; /* Monospace font */
+  color: #9ca3af; /* Medium gray text */
+  word-break: break-all; /* Break long words */
+}

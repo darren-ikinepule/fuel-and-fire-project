@@ -1,0 +1,112 @@
+/* exercisecalculator.css */
+
+/* Base styles for the entire page (consistent with other pages) */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Container for the exercise calculator page */
+.exercisecalculator-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a202c; /* Dark background */
+  color: #fff; /* White text */
+  padding: 1rem;
+}
+
+/* Content card styling - consistent with other content cards */
+.exercisecalculator-content-card {
+  max-width: 48rem;
+  width: 100%;
+  background-color: #2d3748; /* Slightly lighter dark background */
+  border-radius: 0.75rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  padding: 2rem;
+  text-align: center;
+  border: 2px solid #f97316; /* Orange border */
+}
+
+/* Responsive padding for larger screens */
+@media (min-width: 768px) {
+  .exercisecalculator-content-card {
+    padding: 3rem;
+  }
+}
+
+/* Title styling - consistent with other page titles */
+.exercisecalculator-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #f97316; /* Orange text */
+  margin-bottom: 1rem;
+  letter-spacing: -0.05em;
+}
+
+/* Responsive font size for title */
+@media (min-width: 768px) {
+  .exercisecalculator-title {
+    font-size: 3.75rem;
+  }
+}
+
+/* Description text styling - consistent with other page descriptions */
+.exercisecalculator-description {
+  font-size: 1rem;
+  color: #9ca3af; /* Medium gray text */
+  line-height: 1.625;
+  margin-bottom: 2rem;
+}
+
+/* Responsive font size for description */
+@media (min-width: 768px) {
+  .exercisecalculator-description {
+    font-size: 1.125rem;
+  }
+}
+
+/* Exercise options list */
+.exercise-options-list {
+  list-style: none; /* Remove default bullet points */
+  padding: 0;
+  margin: 2rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Space between list items */
+  text-align: left; /* Align text within list items to the left */
+}
+
+/* Individual exercise option item */
+.exercise-option-item {
+  background-color: #f97316; /* Orange background */
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease-in-out;
+}
+
+.exercise-option-item:hover {
+  transform: translateY(-3px); /* Slight lift on hover */
+}
+
+/* Responsive layout for exercise options */
+@media (min-width: 640px) { /* Similar to sm: */
+  .exercise-options-list {
+    flex-direction: row; /* Row layout on larger screens */
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center; /* Center items */
+    gap: 1.5rem; /* More space between items in row layout */
+  }
+  .exercise-option-item {
+    flex: 1; /* Allow items to grow */
+    min-width: 280px; /* Minimum width for items */
+    max-width: 48%; /* Max width to allow two columns with gap */
+  }
+}

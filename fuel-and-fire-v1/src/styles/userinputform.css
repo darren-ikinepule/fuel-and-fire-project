@@ -1,0 +1,145 @@
+/* userinputform.css */
+
+/* Base styles for the entire page (similar to homepage.css and socialpage.css) */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Container for the user input form page */
+.userinputform-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a202c; /* Dark background */
+  color: #fff; /* White text */
+  padding: 1rem;
+}
+
+/* Content card styling - consistent with other content cards */
+.userinput-content-card {
+  max-width: 48rem;
+  width: 100%;
+  background-color: #2d3748; /* Slightly lighter dark background */
+  border-radius: 0.75rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  padding: 2rem;
+  text-align: center;
+  border: 2px solid #f97316; /* Orange border */
+}
+
+/* Responsive padding for larger screens */
+@media (min-width: 768px) {
+  .userinput-content-card {
+    padding: 3rem;
+  }
+}
+
+/* Title styling - consistent with other page titles */
+.userinput-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #f97316; /* Orange text */
+  margin-bottom: 1rem;
+  letter-spacing: -0.05em;
+}
+
+/* Responsive font size for title */
+@media (min-width: 768px) {
+  .userinput-title {
+    font-size: 3.75rem;
+  }
+}
+
+/* Description text styling - consistent with other page descriptions */
+.userinput-description {
+  font-size: 1rem;
+  color: #9ca3af; /* Medium gray text */
+  line-height: 1.625;
+  margin-bottom: 2rem;
+}
+
+/* Responsive font size for description */
+@media (min-width: 768px) {
+  .userinput-description {
+    font-size: 1.125rem;
+  }
+}
+
+/* Form container */
+.input-form {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  gap: 1.5rem; /* Space between form elements */
+  margin-top: 2rem;
+  max-width: 400px; /* Limit form width for better appearance */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left; /* Align labels and input to the left within the form */
+}
+
+/* Label styling */
+.form-label {
+  font-size: 1.125rem;
+  color: #f97316; /* Orange for labels */
+  font-weight: 600;
+  margin-bottom: 0.5rem; /* Space between label and input */
+  display: block; /* Ensure label takes full width */
+}
+
+/* Input field styling */
+.form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid #f97316; /* Orange border */
+  background-color: #1a202c; /* Dark background for input */
+  color: #fff; /* White text in input */
+  font-size: 1rem;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.form-input::placeholder {
+  color: #6b7280; /* Placeholder text color */
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #ea580c; /* Darker orange on focus */
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.5); /* Orange shadow on focus */
+}
+
+/* Submit button styling - consistent with Get Started button */
+.submit-button {
+  background-color: #ea580c; /* Orange background */
+  color: #fff; /* White text */
+  font-weight: 700;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px; /* Fully rounded */
+  font-size: 1.125rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  border: none;
+  cursor: pointer;
+  margin-top: 1.5rem; /* Space above button */
+}
+
+.submit-button:hover {
+  background-color: #c2410c; /* Darker orange on hover */
+  transform: scale(1.05);
+}
+
+.submit-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(249, 115, 22, 0.75);
+}
+
+/* Responsive font size for button */
+@media (min-width: 768px) {
+  .submit-button {
+    font-size: 1.25rem;
+  }
+}
